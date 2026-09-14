@@ -1,4 +1,4 @@
-# StreamFlix — Tela de Login
+# Netlix — Tela de Login
 
 Clone da tela de login estilo Netflix, feito com HTML, CSS e JavaScript puros (sem frameworks ou dependências externas).
 
