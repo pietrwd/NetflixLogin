@@ -1,1 +1,69 @@
-//código HTML do projeto
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <header class="topbar">
+    <div class="logo"><span>NETFLIX</span></div>
+    <select class="lang-select" aria-label="Idioma">
+      <option value="pt-br">Português</option>
+      <option value="en">English</option>
+    </select>
+  </header>
+
+  <main class="login-wrap">
+    <form class="login-box" id="loginForm" novalidate>
+      <h1>Entrar</h1>
+
+      <div class="field">
+        <input type="email" id="email" placeholder=" " autocomplete="username" required>
+        <label for="email">Email ou número de telefone</label>
+        <span class="error-msg" id="emailError"></span>
+      </div>
+
+      <div class="field">
+        <input type="password" id="password" placeholder=" " autocomplete="current-password" required minlength="4">
+        <label for="password">Senha</label>
+        <button type="button" class="toggle-pass" id="togglePass" aria-label="Mostrar senha">Mostrar</button>
+        <span class="error-msg" id="passwordError"></span>
+      </div>
+
+      <button type="submit" class="btn-signin" id="signInBtn">Entrar</button>
+
+      <div class="divider">OU</div>
+
+      <button type="button" class="btn-secondary">Usar código de acesso via mensagem</button>
+
+      <div class="row-between">
+        <label class="remember">
+          <input type="checkbox" id="rememberMe">
+          <span>Lembrar de mim</span>
+        </label>
+        <a href="#" class="need-help">Precisa de ajuda?</a>
+      </div>
+
+      <p class="signup-text">
+        Novo por aqui? <a href="#">Assine agora</a>.
+      </p>
+
+      <p class="recaptcha-text">
+        Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+        <a href="#">Saiba mais.</a>
+      </p>
+    </form>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
